@@ -12,7 +12,14 @@ import Image
 import matplotlib.pyplot as plt
 import skimage.io as io
 "load image data"
-Img_Original =  io.imread( './data/testa.png')      # Gray image, rgb images need pre-conversion
+Img_Original =  io.imread( 'poopy.jpg')      # Gray image, rgb images need pre-conversion
+
+#trying to find start and end
+
+'''for y in range(0,len(Img_Original)):
+	for x in range(0,len(Img_Original):
+		if(Img_Original[x][y]!=(0 or 1)):'''
+			
 
 "Convert gray images to binary images using Otsu's method"
 from skimage.filter import threshold_otsu
